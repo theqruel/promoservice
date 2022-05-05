@@ -20,8 +20,8 @@ function parallax (event) {
 	bg.forEach(elem => {
 		let speed = elem.getAttribute('data-speed');
 		let x = event.clientX*speed/50 - 50;
-		let y = event.clientY*speed/50;
-		elem.style.transform = `translate(${x}px, ${y}px)`;
+		let y = event.clientY*speed/50 - 70;
+		elem.style.transform = `translate(${-x}px, ${-y}px)`;
 	});
 }
 
