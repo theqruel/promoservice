@@ -31,7 +31,7 @@ document.addEventListener('mousemove', parallax);
 // ---------------motion animation-----------------
 
 
-const motionItems = document.querySelectorAll('#motionItem')
+const motionItems = document.querySelectorAll('.motionItem')
 
 if (motionItems.length > 0) {
 	window.addEventListener('scroll', scrollMotion)

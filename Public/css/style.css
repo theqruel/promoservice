@@ -189,7 +189,7 @@ html {
 	display: none;
 	background-image: url(../Img/burger-icon.svg);
 	background-size: cover;
-	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.0);
 	width: 32px;
 	height: 32px;
 }
