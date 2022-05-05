@@ -186,6 +186,8 @@ html {
 
 
 .burger-button {
+	position: relative;
+	z-index: 3;
 	display: none;
 	background-image: url(../Img/burger-icon.svg);
 	background-size: cover;
@@ -203,57 +205,11 @@ html {
 	}
 }
 
-/*-------burger-menu------------------------------------*/
-
-.burger-menu {
-	z-index: 100;
-	width: 240px;
-	position: fixed;
-	top: -25px;
-	left: calc(50% - 120px);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	opacity: 0;
-	transform: scale(1, 0.5);
-	transition: 0.2s ease;
-}
-
-@media (min-width: 767px){
-	.burger-menu {
-		display: none;
-	}
-}
-
-.burger-menu.active {
-	transform: scale(1, 1);
-	top: 64px;
-	opacity: 100;
-}
-
-.burger-menu__blank {
-	width: 100%;
-	height: 20px;
-	background-color: #D9E3EB;
-}
-
-.burger-menu__link {
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	background-color: #D9E3EB;
-}
-
-
-
- /*-------contacts------------------------------------*/
+/*-------contacts------------------------------------*/
 
 .contacts {
 	position: fixed;
-	z-index: 100;
+	z-index: 2;
 	width: 100%;
 	margin-top: 116px;
 	height: 64px;
@@ -267,7 +223,7 @@ html {
 
 @media (max-width: 767px){
 	.contacts{
-		margin-top: 30px;
+		margin-top: 60px;
 	}
 }
 
@@ -329,8 +285,6 @@ html {
 	font-size: 20px;
 }
 
-
-
 .contacts__info-icon {
 	display: none;
 }
@@ -356,6 +310,51 @@ html {
 		justify-content: center;
 	}
 }
+
+/*-------burger-menu------------------------------------*/
+
+.burger-menu {
+	width: 240px;
+	position: fixed;
+	z-index: 2;
+	top: -25px;
+	left: calc(50% - 120px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	transform: scale(1, 0.5);
+	transition: 0.2s ease;
+}
+
+@media (min-width: 767px){
+	.burger-menu {
+		display: none;
+	}
+}
+
+.burger-menu.active {
+	transform: scale(1, 1);
+	top: 64px;
+	opacity: 100;
+}
+
+.burger-menu__blank {
+	width: 100%;
+	height: 20px;
+	background-color: #D9E3EB;
+}
+
+.burger-menu__link {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #D9E3EB;
+}
+
 
 /*-------main background------------------------------------*/
 
